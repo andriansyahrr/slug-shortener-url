@@ -11,7 +11,7 @@ export const LinkSchema = z.object({
 export const CreateLinkSchema = z.object({
   url: z
     .string()
-    .min(1, { message: "URL is required." })
+    .min(5, { message: "URL is required." })
     .url({
       message: "Please enter a valid URL. Include http:// or https://",
     })
